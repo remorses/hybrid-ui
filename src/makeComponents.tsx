@@ -142,8 +142,6 @@ export const makeComponents = (styled: StyledInterface | any, primitives) => {
         onClick={onPress}
         __css={{
           textAlign: 'center',
-          lineHeight: 'inherit',
-          textDecoration: 'none',
           px: 3,
           py: 2,
           color: 'white',

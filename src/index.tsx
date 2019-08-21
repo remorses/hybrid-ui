@@ -23,6 +23,7 @@ const {
             display: 'inline-block',
             fontSize: 'inherit',
             lineHeight: 'inherit',
+            textDecoration: 'none',
             ':active': {
               opacity: 0.2,
             },
