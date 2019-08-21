@@ -26,7 +26,7 @@ const shadows: Theme['shadows'] = [
 
 
 const fonts = {
-    default: 'SF UI Text',
+    default: 'arial',
 }
 
 
@@ -38,6 +38,7 @@ const radii = [
 const variants = {
     text: {
         fontFamily: fonts.default,
+        fontSize: '20px',
     },
     h1: {},
     h2: {},
@@ -45,11 +46,7 @@ const variants = {
     button: {
         color: colors.white,
         bg: colors.primary,
-        ':hover': {
-            background: Color(colors.primary).darken(0.3).toString(),
-            color: colors.white,
-            boxShadow: shadows[1],
-        },
+        fontSize: '20px',
     },
     card: {
         borderRadius: radii[1],

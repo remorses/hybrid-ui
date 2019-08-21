@@ -33,7 +33,7 @@ import css, {get} from '@styled-system/css';
 
 const sx = props => css(props.sx)(props.theme);
 const base = props => css(props.__css)(props.theme);
-const variant = ({theme, variants, tx = 'variants'}) => {
+export const variant = ({theme, variants, tx = 'variants'}) => {
   if (!theme || !Object.keys(theme).length) {
     theme = defaultTheme;
   }
@@ -83,6 +83,7 @@ export const makeComponents = (styled: StyledInterface | any, primitives) => {
       margin: 0,
       padding: 0,
       width: '100%',
+      alignSelf: 'center',
       height: 'auto',
       display: 'flex',
       flexDirection: 'column',
@@ -118,6 +119,7 @@ export const makeComponents = (styled: StyledInterface | any, primitives) => {
       layout,
       typography,
       color,
+      border,
     ),
   ) as any;
   Text.defaultProps = {variants: 'text'};
@@ -133,13 +135,12 @@ export const makeComponents = (styled: StyledInterface | any, primitives) => {
 
 
   const Button: FC<TextProps & TouchableOpacityProps> = forwardRef(
-    ({onPress, ...props}: any, ref) => (
+    ({...props}: any, ref) => (
       <Text
         ref={ref}
         as={_button}
         variants="button"
         {...props}
-        onClick={onPress}
         __css={{
           textAlign: 'center',
           px: 3,

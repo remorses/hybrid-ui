@@ -27,6 +27,11 @@ const {
             ':active': {
               opacity: 0.2,
             },
+            // ':hover': {
+            //     background: Color(colors.primary).darken(0.3).toString(),
+            //     color: 'white',
+            //     boxShadow: 1,
+            // }
         }
         return (
             <button {...rest} onClick={onPress}/>
