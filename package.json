@@ -6,7 +6,7 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "publish": "tsc && npm publish",
+    "publish": "npm publish",
     "test": "mocha --require ts-node/register --timeout 10000 tests/* --colors"
   },
   "keywords": [],
