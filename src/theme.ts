@@ -50,7 +50,6 @@ const variants = {
             color: colors.white,
             boxShadow: shadows[1],
         },
-
     },
     card: {
         borderRadius: radii[1],

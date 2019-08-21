@@ -18,6 +18,14 @@ const {
     Text: 'div',
     Button: props => {
         const {onPress, ...rest} = props
+        rest.style = {
+            cursor: 'pointer',
+            display: 'inline-block',
+            fontSize: 'inherit',
+            ':active': {
+              opacity: 0.2,
+            },
+        }
         return (
             <button {...rest} onClick={onPress}/>
         )

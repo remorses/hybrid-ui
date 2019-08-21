@@ -130,6 +130,8 @@ export const makeComponents = (styled: StyledInterface | any, primitives) => {
     <Text ref={ref} tx="variants" variants="h2" {...props} __css={{}} />
   ));
 
+
+
   const Button: FC<TextProps & TouchableOpacityProps> = forwardRef(
     ({onPress, ...props}: any, ref) => (
       <Text
@@ -139,21 +141,15 @@ export const makeComponents = (styled: StyledInterface | any, primitives) => {
         {...props}
         onClick={onPress}
         __css={{
-          cursor: 'pointer',
-          display: 'inline-block',
           textAlign: 'center',
           lineHeight: 'inherit',
           textDecoration: 'none',
-          fontSize: 'inherit',
           px: 3,
           py: 2,
           color: 'white',
           bg: 'primary',
           border: 0,
           borderRadius: 4,
-          ':active': {
-            opacity: 0.2,
-          },
         }}
       />
     ),
