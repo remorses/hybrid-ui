@@ -22,6 +22,7 @@ const {
             cursor: 'pointer',
             display: 'inline-block',
             fontSize: 'inherit',
+            lineHeight: 'inherit',
             ':active': {
               opacity: 0.2,
             },
