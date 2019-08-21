@@ -18,16 +18,7 @@ jobs:
           node-version: 12
       - run: npm ci
       - run: npm test
-  bump-version:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v1
-      - name: Bump version
-        uses: remorses/bump-version@master
-        with:
-          version_file: VERSION
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
@@ -40,7 +31,16 @@ jobs:
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
-
+  bump-version:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - name: Bump version
+        uses: remorses/bump-version@master
+        with:
+          version_file: VERSION
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   # publish-gpr:
   #   needs: build
   #   runs-on: ubuntu-latest
