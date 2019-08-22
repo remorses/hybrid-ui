@@ -73,6 +73,7 @@ const variants = {
     image: {},
     button: {
         ...text,
+        borderRadius: radii[0],
         color: colors.white,
         bg: colors.primary,
     },
