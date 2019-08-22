@@ -123,5 +123,6 @@ Link.displayName = 'Link';
 export const Row: FC<BoxProps> = props => (
   <Box flexDirection="row" {...props} />
 );
+Row.displayName = 'Row'
 
 export const Column = Box;
