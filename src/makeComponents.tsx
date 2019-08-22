@@ -235,7 +235,7 @@ export const makeComponents = (styled: StyledInterface | any, primitives) => {
     type SrollViewProps = {
         noScrollBar: boolean
     } & BoxProps
-    const SrollView: FC<SrollViewProps> = forwardRef((props, ref) => (
+    const ScrollView: FC<SrollViewProps> = forwardRef((props, ref) => (
         <Box ref={ref} as={_scrollview} variants='scrollview' {...props} />
     ))
 
@@ -254,6 +254,6 @@ export const makeComponents = (styled: StyledInterface | any, primitives) => {
       Button,
       Hidden,
       Link,
-      SrollView,
+      ScrollView,
     }
 }

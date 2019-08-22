@@ -15,7 +15,7 @@ const {
     Button,
     Hidden,
     Link,
-    SrollView
+    ScrollView
 } = makeComponents(styled, {
     View: 'div',
     Text: 'div',
@@ -83,5 +83,5 @@ export {
     Button,
     Hidden,
     Link,
-    SrollView
+    ScrollView
 }
