@@ -233,7 +233,7 @@ export const makeComponents = (styled: StyledInterface | any, primitives) => {
     ))
 
     type SrollViewProps = {
-        noScrollBar: boolean
+        noScrollBar?: boolean
     } & BoxProps
     const ScrollView: FC<SrollViewProps> = forwardRef((props, ref) => (
         <Box ref={ref} as={_scrollview} variants='scrollview' {...props} />
