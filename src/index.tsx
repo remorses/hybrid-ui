@@ -121,6 +121,14 @@ export const Link: FC<LinkProps> = styled.a.attrs(props => ({
 `;
 Link.displayName = 'Link';
 
+export const H1: FC<TextProps> = props => (
+  <Text variants={['h1']} {...props} />
+);
+
+export const H2: FC<TextProps> = props => (
+  <Text variants={['h2']} {...props} />
+);
+
 export const Row: FC<BoxProps> = props => (
   <Box flexDirection="row" {...props} />
 );
