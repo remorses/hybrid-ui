@@ -79,7 +79,7 @@ const variants = {
     },
     card: {
         borderRadius: radii[1],
-        background: colors.background,
+        backgroundColor: colors.background,
         boxShadow: shadows[0],
         marginTop: space[3],
         padding: space[3],
