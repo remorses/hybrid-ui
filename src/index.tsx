@@ -124,10 +124,12 @@ Link.displayName = 'Link';
 export const H1: FC<TextProps> = props => (
   <Text variants={['h1']} {...props} />
 );
+H1.displayName = 'H1';
 
 export const H2: FC<TextProps> = props => (
   <Text variants={['h2']} {...props} />
 );
+H2.displayName = 'H2'
 
 export const Row: FC<BoxProps> = props => (
   <Box flexDirection="row" {...props} />

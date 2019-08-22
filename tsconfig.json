@@ -16,7 +16,7 @@
         "jsx": "react",
     },
     "include": [
-        "src"
+        "src", "native", "theme"
     ],
     "exclude": [
         "node_modules",

@@ -1,7 +1,7 @@
 import { TouchableOpacityProps } from 'react-native'
 // import styled from '@emotion/native';
 
-import defaultTheme from './theme'
+import defaultTheme from '../theme'
 import React, { FC, forwardRef } from 'react'
 import {
     compose,
