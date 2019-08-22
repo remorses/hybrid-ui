@@ -94,7 +94,7 @@ export const makeComponents = (styled: StyledInterface | any, primitives) => {
             margin: 0,
             padding: 0,
             width: '100%',
-            alignSelf: 'center',
+            // alignSelf: 'center',
             height: 'auto',
             display: 'flex',
             flexDirection: 'column'
