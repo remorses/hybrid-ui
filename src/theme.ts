@@ -29,24 +29,52 @@ const fonts = {
     default: 'arial',
 }
 
+const fontSizes = [
+    '12px',
+    '14px',
+    '16px',
+    '24px',
+    '42px',
+]
+
+const fontWeights = [
+    300,
+    400,
+    500,
+    600,
+]
+
 
 const radii = [
     '4px',
     '8px',
 ]
 
+const text = {
+    fontFamily: fonts.default,
+    fontSize: fontSizes[2],
+    fontWeight: fontWeights[1],
+}
+
 const variants = {
-    text: {
-        fontFamily: fonts.default,
-        fontSize: '20px',
+    text,
+    h1: {
+        ...text,
+        fontSize: 4,
     },
-    h1: {},
-    h2: {},
+    h2: {
+        ...text,
+        fontSize: 3,
+    },
+    link: {
+        ...text,
+        color: 'primary',
+    },
     image: {},
     button: {
+        ...text,
         color: colors.white,
         bg: colors.primary,
-        fontSize: '20px',
     },
     card: {
         borderRadius: radii[1],
@@ -62,6 +90,8 @@ const variants = {
 export default {
     colors,
     fonts,
+    fontSizes,
+    fontWeights,
     space,
     shadows,
     sizes,

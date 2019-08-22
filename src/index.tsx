@@ -46,6 +46,7 @@ const {
         overflow-y: scroll;
         overflow-x: hidden;
         width: 100%;
+        height: auto;
         ${({ noScrollbar }: any) =>
             noScrollbar
                 ? `
