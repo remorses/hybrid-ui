@@ -207,6 +207,24 @@ export const makeComponents = (styled: StyledInterface | any, primitives) => {
       }}
     />
   ));
+
+  const Hidden: FC<BoxProps> = forwardRef((props, ref) => (
+    <Box
+      ref={ref}
+      variants="hidden"
+      {...props}
+      __css={{
+        visibility: 'hidden',
+        display: 'inline-block',
+        width: 'auto',
+        height: 'auto',
+        margin: 0,
+        padding: 0,
+      }}
+    />
+  ));
+
+
   return {
     Box,
     Column,
@@ -218,5 +236,6 @@ export const makeComponents = (styled: StyledInterface | any, primitives) => {
     H2,
     Text,
     Button,
+    Hidden
   }
 };
