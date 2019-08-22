@@ -5,6 +5,7 @@
   "description": "Hybrid components for react and react native",
   "main": "dist/src/index.js",
   "types": "dist/",
+  "files": ["/dist"],
   "scripts": {
     "pub": "tsc && npm publish",
     "test": "mocha --require ts-node/register --timeout 10000 tests/* --colors"
