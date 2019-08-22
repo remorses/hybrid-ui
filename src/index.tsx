@@ -17,8 +17,12 @@ const {
     Link,
     ScrollView
 } = makeComponents(styled, {
-    View: 'div',
-    Text: 'div',
+    View: styled.div`
+        display: flex;
+    `,
+    Text: styled.div`
+        display: flex;
+    `,
     Button: (props) => {
         const { onPress, ...rest } = props
         rest.style = {
