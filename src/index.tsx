@@ -55,6 +55,7 @@ Text.displayName = 'Text';
 export const Button: FC<ButtonProps> = styled.button.attrs((props: any) => ({
   onClick: props.onPress,
   variants: ['button'],
+  onPress: undefined,
 }))`
   width: auto;
   padding: 4px 8px;
