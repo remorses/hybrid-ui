@@ -20,8 +20,8 @@ export const Box: FC<BoxProps> = styled.div.attrs(props => ({
   height: auto;
   margin: 0;
   padding: 0;
-  ${box}
   ${variants}
+  ${box}
 `;
 Box.displayName = 'Box';
 
@@ -35,8 +35,8 @@ export const Card: FC<BoxProps> = styled.div.attrs(props => ({
   height: auto;
   margin: 0;
   padding: 0;
-  ${box}
   ${variants}
+  ${box}
 `;
 Card.displayName = 'Card';
 export const Text: FC<TextProps> = styled.div.attrs(props => ({
@@ -48,8 +48,8 @@ export const Text: FC<TextProps> = styled.div.attrs(props => ({
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  ${text}
   ${variants}
+  ${text}
 `;
 Text.displayName = 'Text';
 export const Button: FC<ButtonProps> = styled.button.attrs((props: any) => ({
@@ -67,16 +67,16 @@ export const Button: FC<ButtonProps> = styled.button.attrs((props: any) => ({
   :active {
     opacity: 0.2;
   }
-  ${box}
   ${variants}
+  ${box}
 `;
 Button.displayName = 'Button';
 export const Image: FC<ImageProps> = styled.img.attrs((props: any) => ({
   src: props.source,
   variants: ['image'],
 }))`
-  ${box}
   ${variants}
+  ${box}
 `;
 Image.displayName = 'Image';
 export const ScrollView: FC<ScrollViewProps> = styled.div.attrs(props => ({
@@ -97,8 +97,8 @@ export const ScrollView: FC<ScrollViewProps> = styled.div.attrs(props => ({
             -ms-overflow-style: none;  /* IE 10+ */
             `
         : ''}
-    ${box}
     ${variants}
+    ${box}
 `;
 ScrollView.displayName = 'ScrollView';
 
@@ -116,8 +116,8 @@ Hidden.displayName = 'Hidden';
 export const Link: FC<LinkProps> = styled.a.attrs(props => ({
   variants: ['link'],
 }))`
-  ${text}
   ${variants}
+  ${text}
 `;
 Link.displayName = 'Link';
 
