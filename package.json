@@ -4,7 +4,7 @@
   "version": "2.0.21",
   "description": "Hybrid components for react and react native",
   "main": "dist/src/index.js",
-  "types": "dist/src/index.d.ts",
+  "types": "dist/src/index.d.js",
   "files": ["/dist/*"],
   "scripts": {
     "pub": "tsc && npm publish",
