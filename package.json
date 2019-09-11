@@ -5,7 +5,9 @@
   "description": "Hybrid components for react and react native",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.js",
-  "files": ["/dist/*"],
+  "files": [
+    "/dist/*"
+  ],
   "scripts": {
     "pub": "tsc && npm publish",
     "test": "mocha --require ts-node/register --timeout 10000 tests/* --colors"
@@ -28,6 +30,7 @@
     "@types/styled-components": "^4.1.18",
     "@types/styled-system": "^5.1.0",
     "mocha": "^6.1.4",
+    "react-dom": "^16.9.0",
     "ts-node": "^8.2.0",
     "typescript": "^3.5.3"
   }
