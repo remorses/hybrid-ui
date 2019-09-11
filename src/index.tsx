@@ -114,7 +114,7 @@ export const Hidden: FC<BoxProps> = styled.div`
 `
 Hidden.displayName = 'Hidden'
 
-export const Link: FC<LinkProps> = styled.a.attrs((props) => ({
+export const Link: FC<LinkProps> = styled.a.attrs((props: LinkProps) => ({
     variants: props.variants || ['link']
 }))`
     ${variants}
