@@ -42,11 +42,12 @@ export const variants = ({ theme, variants, }) => {
 export const box = compose(
   space,
   layout,
-  typography,
+  // typography,
   flexbox,
   background,
   color,
-  border
+  border,
+  shadow,
 )
 
 export const text = compose(
@@ -54,6 +55,6 @@ export const text = compose(
   layout,
   typography,
   color,
-  border
+  // border
 )
 
