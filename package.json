@@ -4,7 +4,7 @@
   "version": "2.0.25",
   "description": "Hybrid components for react and react native",
   "main": "src/index.js",
-  "types": "src/index.d.js",
+  "types": "src/index.d.ts",
   "files": [
     "/src/*",
     "/native/*",
