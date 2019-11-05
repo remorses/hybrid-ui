@@ -4,7 +4,7 @@ on:
   - push
 
 jobs:
-  build:
+  all:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
@@ -18,7 +18,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
       - name: Bump version
-        uses: remorses/bump-version@master
+        uses: remorses/bump-version@js
         with:
           version_file: VERSION
         env:
