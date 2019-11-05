@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, ImgHTMLAttributes } from 'react'
 import styled, { ThemedStyledProps } from 'styled-components'
 import { box, text, variants } from './styleProps'
 import {
@@ -40,6 +40,7 @@ export const Card: FC<BoxProps> = styled.div.attrs((props: BoxProps) => ({
     ${box}
 `
 Card.displayName = 'Card'
+
 export const Text: FC<TextProps> = styled.div.attrs((props: TextProps) => ({
     variants: props.variants || ['text']
 }))`
@@ -53,11 +54,14 @@ export const Text: FC<TextProps> = styled.div.attrs((props: TextProps) => ({
     ${text}
 `
 Text.displayName = 'Text'
-export const Button: FC<ButtonProps> = styled.button.attrs((props: ButtonProps) => ({
-    onClick: props.onPress,
-    variants: props.variants || ['button'],
-    onPress: undefined
-}))`
+
+export const Button: FC<ButtonProps> = styled.button.attrs(
+    (props: ButtonProps) => ({
+        onClick: props.onPress,
+        variants: props.variants || ['button'],
+        onPress: undefined
+    })
+)`
     width: auto;
     padding: 4px 8px;
     cursor: pointer;
@@ -72,7 +76,8 @@ export const Button: FC<ButtonProps> = styled.button.attrs((props: ButtonProps) 
     ${box}
 `
 Button.displayName = 'Button'
-export const Image: FC<ImageProps> = styled.img.attrs((props: ImageProps) => ({
+
+export const Image: FC<ImageProps & ImgHTMLAttributes<any>> = styled.img.attrs((props: ImageProps) => ({
     src: props.source,
     variants: props.variants || ['image']
 }))`
@@ -80,9 +85,12 @@ export const Image: FC<ImageProps> = styled.img.attrs((props: ImageProps) => ({
     ${box}
 `
 Image.displayName = 'Image'
-export const ScrollView: FC<ScrollViewProps> = styled.div.attrs((props: ScrollViewProps) => ({
-    variants: props.variants || ['scrollview']
-}))`
+
+export const ScrollView: FC<ScrollViewProps> = styled.div.attrs(
+    (props: ScrollViewProps) => ({
+        variants: props.variants || ['scrollview']
+    })
+)`
     overflow-y: scroll;
     overflow-x: hidden;
     width: 100%;
