@@ -3,10 +3,12 @@
   "_": "[bump]",
   "version": "2.0.25",
   "description": "Hybrid components for react and react native",
-  "main": "dist/src/index.js",
-  "types": "dist/src/index.d.js",
+  "main": "src/index.js",
+  "types": "src/index.d.js",
   "files": [
-    "/dist/*"
+    "/src/*",
+    "/native/*",
+    "/theme/*"
   ],
   "scripts": {
     "pub": "tsc && npm publish",

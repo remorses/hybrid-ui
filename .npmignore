@@ -6,3 +6,4 @@ tsconfig.json
 Dockerfile
 README.md
 tests
+*.ts
