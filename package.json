@@ -23,12 +23,12 @@
     "color": "^3.1.2",
     "styled-system": "^5.1.0",
     "@types/styled-components": "^4.1.18",
-    "@types/styled-system": "^5.1.2"
+    "@types/styled-system": "^5.1.2",
+    "typescript": "latest"
   },
   "peerDependencies": {
     "styled-components": "latest",
-    "react-dom": "latest",
-    "typescript": "latest"
+    "react-dom": "latest"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.7",
