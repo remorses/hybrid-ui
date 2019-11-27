@@ -7,3 +7,7 @@ README.md
 tests
 *.ts
 *.tsx
+src/*.ts
+src/*.tsx
+theme/*.ts
+theme/*.tsx
