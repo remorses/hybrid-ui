@@ -1,7 +1,7 @@
 {
   "name": "hybrid-components",
   "_": "[bump]",
-  "version": "3.0.3",
+  "version": "3.0.4",
   "description": "Hybrid components for react and react native",
   "main": "src/index.js",
   "types": "src/index.d.ts",
