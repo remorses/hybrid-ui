@@ -22,6 +22,7 @@ export type ThemedComponentProps = {
     ref?: any
     as?: any
     style: CSSProperties
+    className?: string
 }
 
 export type BoxProps = Omit<
