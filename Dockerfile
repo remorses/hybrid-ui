@@ -12,3 +12,5 @@ COPY . /src/
 
 ENTRYPOINT ["dumb-init", "--"]
 CMD []
+
+
