@@ -11,6 +11,8 @@ import {
     ThemedComponentProps
 } from './types'
 
+export * from './types'
+
 export const Box: FC<BoxProps> = styled.div.attrs((props: BoxProps) => ({
     variants: props.variants || ['box']
 }))`

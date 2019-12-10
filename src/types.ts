@@ -20,41 +20,46 @@ export type ThemedComponentProps = {
     // css?: ThemedCSS
     variants?: string | string[]
     ref?: any
-    as?: any,
+    as?: any
     style: CSSProperties
 }
 
-export type BoxProps = ThemedComponentProps &
-    LayoutProps &
-    SpaceProps &
-    BorderProps &
-    TypographyProps &
-    PositionProps &
-    ShadowProps &
-    OverflowProps &
-    FlexboxProps &
-    BackgroundProps &
-    BackgroundColorProps &
-    ColorProps
+export type BoxProps = Omit<
+    ThemedComponentProps &
+        LayoutProps &
+        SpaceProps &
+        BorderProps &
+        TypographyProps &
+        PositionProps &
+        ShadowProps &
+        OverflowProps &
+        FlexboxProps &
+        BackgroundProps &
+        BackgroundColorProps &
+        ColorProps,
+    'color'
+>
 
-export type TextProps = ThemedComponentProps &
-    LayoutProps &
-    SpaceProps &
-    TypographyProps &
-    OverflowProps &
-    ColorProps
-
+export type TextProps = Omit<
+    ThemedComponentProps &
+        LayoutProps &
+        SpaceProps &
+        TypographyProps &
+        OverflowProps &
+        ColorProps,
+    'color'
+>
 
 export type ImageProps = {
     source: any
 } & BoxProps
 
 export type ButtonProps = {
-    onPress?: Function,
+    onPress?: Function
 } & BoxProps
 export type ScrollViewProps = {
-    noScrollBar?: boolean,
+    noScrollBar?: boolean
 } & BoxProps
 export type LinkProps = {
-    href?: string,
+    href?: string
 } & TextProps
