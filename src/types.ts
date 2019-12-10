@@ -33,7 +33,8 @@ export type BoxProps = ThemedComponentProps &
     OverflowProps &
     FlexboxProps &
     BackgroundProps &
-    BackgroundColorProps
+    BackgroundColorProps &
+    ColorProps
 
 export type TextProps = ThemedComponentProps &
     LayoutProps &
