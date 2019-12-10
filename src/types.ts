@@ -25,31 +25,26 @@ export type ThemedComponentProps = {
     className?: string
 }
 
-export type BoxProps = Omit<
-    ThemedComponentProps &
-        LayoutProps &
-        SpaceProps &
-        BorderProps &
-        TypographyProps &
-        PositionProps &
-        ShadowProps &
-        OverflowProps &
-        FlexboxProps &
-        BackgroundProps &
-        BackgroundColorProps &
-        ColorProps,
-    'color'
->
+export type BoxProps = ThemedComponentProps &
+    LayoutProps &
+    SpaceProps &
+    BorderProps &
+    TypographyProps &
+    PositionProps &
+    ShadowProps &
+    OverflowProps &
+    FlexboxProps &
+    BackgroundProps &
+    BackgroundColorProps &
+    ColorProps
 
-export type TextProps = Omit<
+export type TextProps = 
     ThemedComponentProps &
         LayoutProps &
         SpaceProps &
         TypographyProps &
         OverflowProps &
-        ColorProps,
-    'color'
->
+        ColorProps
 
 export type ImageProps = {
     source: any
