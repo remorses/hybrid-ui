@@ -21,7 +21,7 @@ export type ThemedComponentProps = {
     variants?: string | string[]
     ref?: any
     as?: any
-    style: CSSProperties
+    style?: CSSProperties
     className?: string
 }
 
