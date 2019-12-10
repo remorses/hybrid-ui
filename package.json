@@ -17,13 +17,13 @@
     "@styled-system/should-forward-prop": "^5.1.0",
     "color": "^3.1.2",
     "styled-system": "^5.1.0",
-    "@types/styled-components": "^4.1.18",
-    "@types/styled-system": "^5.1.2",
-    "typescript": "latest"
+    "@types/styled-components": "latest",
+    "@types/styled-system": "latest"
   },
   "peerDependencies": {
-    "styled-components": "latest",
-    "react-dom": "latest"
+    "styled-components": "*",
+    "react-dom": "*",
+    "typescript": "*"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.7",

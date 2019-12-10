@@ -9,7 +9,8 @@ import {
     OverflowProps,
     BackgroundProps,
     TypographyProps,
-    BackgroundColorProps
+    BackgroundColorProps,
+    PositionProps
 } from 'styled-system'
 import { CSSProperties, StyledInterface } from 'styled-components'
 
@@ -20,13 +21,14 @@ export type ThemedComponentProps = {
     variants?: string | string[]
     ref?: any
     as?: any,
-    style?: any
 }
 
 export type BoxProps = ThemedComponentProps &
     LayoutProps &
     SpaceProps &
     BorderProps &
+    TypographyProps &
+    PositionProps &
     ShadowProps &
     OverflowProps &
     FlexboxProps &

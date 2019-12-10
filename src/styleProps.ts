@@ -13,6 +13,7 @@ import {
     border,
     background,
     typography,
+    position,
 } from 'styled-system'
 
 import css, { get } from '@styled-system/css'
@@ -22,7 +23,7 @@ const sx = (props) => css(props.sx)(props.theme)
 const base = (props) => css(props.__css)(props.theme)
 export const variants = ({ theme, variants, }) => {
     if (!theme || !Object.keys(theme).length) {
-        theme = defaultTheme
+        return ''
     }
     if (!Array.isArray(variants)) {
         variants = [variants]
@@ -42,7 +43,8 @@ export const variants = ({ theme, variants, }) => {
 export const box = compose(
   space,
   layout,
-  // typography,
+  typography,
+  position,
   flexbox,
   background,
   color,

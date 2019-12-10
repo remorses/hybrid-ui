@@ -18,7 +18,6 @@ export const Box: FC<BoxProps> = styled.div.attrs((props: BoxProps) => ({
     flex-direction: column;
     box-sizing: border-box;
     width: 100%;
-    height: auto;
     margin: 0;
     padding: 0;
     ${variants}
