@@ -21,6 +21,7 @@ export type ThemedComponentProps = {
     variants?: string | string[]
     ref?: any
     as?: any,
+    style: CSSProperties
 }
 
 export type BoxProps = ThemedComponentProps &
