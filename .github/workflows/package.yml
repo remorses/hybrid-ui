@@ -12,17 +12,17 @@ jobs:
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: npm ci
-      # - run: npm test
-      - run: npm run pub
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
+      - run: yarn
+      - run: tsc
       - name: Bump version
         uses: remorses/bump-version@js
         with:
           version_file: VERSION
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - run: yarn publish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.npm_token}}
 
 
 

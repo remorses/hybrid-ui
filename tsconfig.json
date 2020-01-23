@@ -9,14 +9,15 @@
             // "dom"
         ],
         "declaration": true,
-        // "outDir": "dist",
+        "rootDir": "src",
+        "outDir": ".",
         "strict": false,
         "esModuleInterop": true,
         "noImplicitAny": false,
         "jsx": "react",
     },
     "include": [
-        "src", "native", "theme"
+        "src"
     ],
     "exclude": [
         "node_modules",
