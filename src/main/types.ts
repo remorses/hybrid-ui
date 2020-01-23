@@ -12,16 +12,16 @@ import {
     BackgroundColorProps,
     PositionProps
 } from 'styled-system'
-import { CSSObject } from '@emotion/styled'
+import { CSSProperties } from 'styled-components'
 
-export type ThemedCSS = BoxProps & TextProps & CSSObject & any
+export type ThemedCSS = BoxProps & TextProps & CSSProperties & any
 
 export type ThemedComponentProps = {
     // css?: ThemedCSS
     variants?: string | string[]
     ref?: any
     as?: any
-    style?: CSSObject
+    style?: CSSProperties
     className?: string
 }
 
