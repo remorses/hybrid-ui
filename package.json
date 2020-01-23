@@ -10,6 +10,11 @@
     "test": "mocha --require ts-node/register --timeout 10000 tests/* --colors",
     "example": "parcel serve --no-autoinstall example/index.html"
   },
+  "files": [
+      "/main/*",
+      "/native/*",
+      "/theme/*"
+  ],
   "keywords": [],
   "author": "Tommaso De Rossi, morse <beats.by.morse@gmail.com>",
   "license": "ISC",
