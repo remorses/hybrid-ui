@@ -3,8 +3,8 @@
   "_": "[bump]",
   "version": "3.0.5",
   "description": "Hybrid components for react and react native",
-  "main": "src/index.js",
-  "types": "src/index.d.ts",
+  "main": "main/index.js",
+  "types": "main/index.d.ts",
   "scripts": {
     "pub": "tsc && npm publish",
     "test": "mocha --require ts-node/register --timeout 10000 tests/* --colors",
