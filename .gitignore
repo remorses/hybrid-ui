@@ -10,9 +10,9 @@ yarn-error.log*
 *.d.ts
 
 dist/*
-theme
-native
-main
+/theme
+/native
+/main
 
 # Runtime data
 pids

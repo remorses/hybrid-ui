@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box } from '../src'
+import { Box } from '../src/main'
 import { ThemeProvider } from 'styled-components'
 import { render } from 'react-dom'
 
