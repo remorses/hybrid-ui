@@ -1,5 +1,5 @@
 import React, { FC, ImgHTMLAttributes } from 'react'
-import styled, { ThemedStyledProps } from 'styled-components'
+import styled from 'styled-components'
 import { box, text, variants } from './styleProps'
 import {
     BoxProps,

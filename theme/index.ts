@@ -1,6 +1,5 @@
 import { Theme, boxShadow, } from 'styled-system'
 import * as CSS from 'csstype'
-import Color from 'color'
 
 const space = [
     0, 4, 8, 16, 32, 64, 128, 256

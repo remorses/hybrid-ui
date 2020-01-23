@@ -1,4 +1,4 @@
-import { TouchableOpacityProps } from 'react-native'
+// import { TouchableOpacityProps } from 'react-native'
 // import styled from '@emotion/native';
 
 import defaultTheme from '../theme'
